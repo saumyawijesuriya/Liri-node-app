@@ -11,5 +11,6 @@ Liri-node-app is a language hInterpretation and Recognition Interface. LIRI is a
 **How It Works**
 1. Authentication keys for Twitter are stored in "keys.js", and we are exporting its contents to the main "liri.js" file
 2. MOVIE LOOKUP-  LIRI app uses "Axios" npm Module to get data from OMDB api. User can provide a movie name (Request) as a parameter to get the Response. 
+![image](https://user-images.githubusercontent.com/51638449/63966218-c1e60e80-ca68-11e9-8516-d12ab26ea6ea.png)
 
 
