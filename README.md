@@ -1,5 +1,5 @@
 # Liri-node-app
-Liri-node-app is a language hInterpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
+Liri-node-app is a language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
 **Technologies Used**
 1. Node.js
@@ -7,6 +7,7 @@ Liri-node-app is a language hInterpretation and Recognition Interface. LIRI is a
 3. Bands in Toun API
 4. OMDB API
 5. Spotify API
+6. Node-spotify-api npm, moment npm, Axios npm, dotenv npm
 
 **How It Works**
 1. Authentication keys for spotify API are stored in "keys.js", and we are exporting its contents to the main "liri.js" file
