@@ -25,7 +25,7 @@ searchValue="The sign";
         console.log("The song's name: " + data.tracks.items[0].name)
         console.log("A preview link of the song from Spotify: " + data.tracks.items[0].href)
         console.log("The album that the song is from: " + data.tracks.items[0].album.name)
-        console.log(".........................................................................")
+        console.log(".....................................................................................")
         }
     
     });
@@ -35,7 +35,7 @@ searchValue="The sign";
 
         var queryUrl = "http://www.omdbapi.com/?t=" + searchValue + "&y=&plot=short&apikey=trilogy";
         console.log(queryUrl);
-        console.log("...................................................................................")
+        console.log("......................................................................................")
     
         axios.get(queryUrl).then(
             function (response) {
@@ -46,7 +46,7 @@ searchValue="The sign";
                 console.log("Language of the Movie : " + response.data.Language);
                 console.log("Plot of the Movie  : " + response.data.Plot);
                 console.log("Actors in the Movie : " + response.data.Actors);
-                console.log("............................................................................")
+                console.log("..............................................................................")
             }
         );
     };
@@ -54,7 +54,7 @@ searchValue="The sign";
 
         var queryUrl = "https://rest.bandsintown.com/artists/" + searchValue + "/events?app_id=codingbootcamp";
         console.log(queryUrl);
-        console.log(".............................................................................................")
+        console.log(".........................................................................................")
     
     
         axios.get(queryUrl).then(function (response) {
@@ -62,7 +62,7 @@ searchValue="The sign";
                 console.log("Name of the Venue : " + response.data[0].venue.name);
                 console.log("Venue Location : " + response.data[0].venue.city);
                 console.log("Date of Event : " + response.data[0].datetime);
-                console.log("......................................................................................")
+                console.log(".................................................................................")
                 
             }
         );
@@ -103,5 +103,4 @@ searchValue="The sign";
             case "do-what-it-says":
             do_what_it_says();
             break;
-        
-        }
+         }
