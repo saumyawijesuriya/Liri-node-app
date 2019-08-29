@@ -7,3 +7,5 @@ Technologies Used
 3. Bands in Toun API
 4. OMDB API
 5. Spotify API
+
+How It Works
