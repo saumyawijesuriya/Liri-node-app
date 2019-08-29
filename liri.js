@@ -17,6 +17,7 @@ searchValue="The sign";
         if (err) {
             return console.log('Error occurred: ' + err);
         }
+        
         else{
             for (let i = 0; i < data.tracks.items.length && i<5; i++) {
             
@@ -51,6 +52,9 @@ searchValue="The sign";
         );
     };
     function concert_This(searchValue) {
+        if (!searchValue) {
+            searchValue = "pink";
+        }
 
         var queryUrl = "https://rest.bandsintown.com/artists/" + searchValue + "/events?app_id=codingbootcamp";
         console.log(queryUrl);
@@ -62,7 +66,7 @@ searchValue="The sign";
                 console.log("Name of the Venue : " + response.data[0].venue.name);
                 console.log("Venue Location : " + response.data[0].venue.city);
                 console.log("Date of Event : " + response.data[0].datetime);
-                console.log(".................................................................................")
+                console.log("......................................................................................")
                 
             }
         );
