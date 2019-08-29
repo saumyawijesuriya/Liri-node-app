@@ -23,7 +23,8 @@ Liri-node-app is a language hInterpretation and Recognition Interface. LIRI is a
   ![2019-08-29 (9)](https://user-images.githubusercontent.com/51638449/63968354-839f1e00-ca6d-11e9-92ef-8205ac44230d.png)
 
 
-If the User did not provide a parameter(Bnand name/ Artist Name) it will privide the Artist "Pink's" concert Information.
+  If the User did not provide a parameter(Bnand name/ Artist Name) it will privide the Artist "Pink's" concert Information.
+  ![2019-08-29 (10)](https://user-images.githubusercontent.com/51638449/63968703-49824c00-ca6e-11e9-9f99-fd354c858a5b.png)
 
 
 5. command "DO-WHAT-IT-SAYS" - The program also reads from a file called "random.text" and executes the command and query found there using string and array methods.
