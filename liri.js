@@ -22,10 +22,10 @@ searchValue="The sign";
             for (let i = 0; i < data.tracks.items.length && i<5; i++) {
             
                 }
-        console.log("Artist(s): " + data.tracks.items[0].artists[0].name);
-        console.log("The song's name: " + data.tracks.items[0].name)
-        console.log("A preview link of the song from Spotify: " + data.tracks.items[0].href)
-        console.log("The album that the song is from: " + data.tracks.items[0].album.name)
+        console.log("Artist(s): " + data.tracks.items[0].artists[0].name)+"\ln";
+        console.log("The song's name: " + data.tracks.items[0].name)+"\ln"
+        console.log("A preview link of the song from Spotify: " + data.tracks.items[0].href)+"\ln"
+        console.log("The album that the song is from: " + data.tracks.items[0].album.name)+"\ln"
         console.log(".....................................................................................")
         }
     
@@ -33,6 +33,10 @@ searchValue="The sign";
     };
 
     function movie_This(searchValue) {
+        if(!searchValue){
+            searchValue="Mr.Nobody"
+            console.log("If You Haven't watch Mr. Nobody, click on the link to watch;  <https://www.imdb.com/title/tt0485947/videoplayer/vi23832857?ref_=tt_ov_vi>")
+        }
 
         var queryUrl = "http://www.omdbapi.com/?t=" + searchValue + "&y=&plot=short&apikey=trilogy";
         console.log(queryUrl);
@@ -40,13 +44,13 @@ searchValue="The sign";
     
         axios.get(queryUrl).then(
             function (response) {
-                console.log("Title of the Movie : " + response.data.Title);
-                console.log("Year the movie came out : " + response.data.Year);
-                console.log("Rotten Tomatoes Rating of the Movie : " + response.data.Ratings[0].Value);
-                console.log("Country where the  movie was produced : " + response.data.Country);
-                console.log("Language of the Movie : " + response.data.Language);
-                console.log("Plot of the Movie  : " + response.data.Plot);
-                console.log("Actors in the Movie : " + response.data.Actors);
+                console.log("Title of the Movie : " + response.data.Title);+"\ln"
+                console.log("Year the movie came out : " + response.data.Year);+"\ln"
+                console.log("Rotten Tomatoes Rating of the Movie : " + response.data.Ratings[0].Value);+"\ln"
+                console.log("Country where the  movie was produced : " + response.data.Country);+"\ln"
+                console.log("Language of the Movie : " + response.data.Language);+"\ln"
+                console.log("Plot of the Movie  : " + response.data.Plot);+"\ln"
+                console.log("Actors in the Movie : " + response.data.Actors);+"\ln"
                 console.log("..............................................................................")
             }
         );
@@ -63,9 +67,9 @@ searchValue="The sign";
     
         axios.get(queryUrl).then(function (response) {
                 
-                console.log("Name of the Venue : " + response.data[0].venue.name);
-                console.log("Venue Location : " + response.data[0].venue.city);
-                console.log("Date of Event : " + response.data[0].datetime);
+                console.log("Name of the Venue : " + response.data[0].venue.name);+"\ln"
+                console.log("Venue Location : " + response.data[0].venue.city);+"\ln"
+                console.log("Date of Event : " + response.data[0].datetime);+"\ln"
                 console.log("......................................................................................")
                 
             }
